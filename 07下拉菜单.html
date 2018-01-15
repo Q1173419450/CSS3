@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .item{
+            width: 200px;
+            height: 300px;
+            overflow: hidden;
+        }
+        h1{
+            height: 30px;
+            font:400 14px/30px 'Microsoft YaHei';
+            border: 1px solid #ddd;
+        }
+        p{
+            height: 0;
+            font: 300 12px/30px 'Microsoft YaHei';
+            background-color: #ddd;
+        }
+        div:target p{
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="item" id="first">
+            <h1><a href="#first">first</a></h1>
+            <p>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+            </p>
+        </div>
+
+        <div class="item" id="second">
+            <h1><a href="#second">second</a></h1>
+            <p>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+            </p>
+        </div>
+
+        <div class="item" id="third">
+            <h1><a href="#third">third</a></h1>
+            <p>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+                这是一段很长的文字<br/>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

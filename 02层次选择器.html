@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+             width: 300px;
+             height: 1000px;
+            margin: 20px auto;
+        }
+        div{
+            margin: 5px;
+            padding: 5px;
+            border: 1px #ddd solid;
+        }
+        /* 所有子标签 */
+        div div{
+            background-color: aqua;
+        }
+        /* div下的子元素*/
+        body > div{
+            background-color: yellow;
+        }
+        /*紧邻的兄弟元素*/
+         .active + div{
+            background-color: blue;
+        }
+         /*所有的兄弟元素*/
+        .active ~ div{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="active">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <div>6
+        <div>7
+            <div>8
+                <div>9
+                    <div>10</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

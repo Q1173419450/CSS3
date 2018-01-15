@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本选择器</title>
+    <style>
+        /*通配选择器*/
+        *{margin: 0; padding: 0;}
+        /*标签选择器*/
+        ul{
+            height: 20px;
+        }
+        ul li{
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 12;
+            text-align: center;
+            list-style: none;
+            float: left;
+            margin-left: 3px;
+            border-radius: 10px;
+            background: yellow;
+        }
+        /* 类选择器 */
+        .demo{
+            width: 300px;
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+        /*CSS3的通配符选择器*/
+        ul *{
+            background-color: aqua;
+        }
+        /*CSS3的标签选择器*/
+        ul{
+            background-color: #ddd;
+        }
+        /*CSS的类选择*/
+
+    </style>
+</head>
+<body>
+<ul class="demo">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li class="item">4</li>
+    <li>5</li>
+    <li class="item">6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+</ul>
+</body>
+</html>
